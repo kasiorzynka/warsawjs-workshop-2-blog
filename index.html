@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+Hello! Please write a post here!
+<br><br>
+
+<!-- Załączenie template'u handlebars -->
+
+<script id="template-add-post" type="text/x-handlebars-template">
+    <form id="add-post-form">
+        <input type="text" id="add-post-title" placeholder="Tytuł" required><br><br>
+        <input type="text" id="add-post-author" placeholder="Autor" required><br><br>
+        <input type="text" id="add-post-body" placeholder="Treść" size="50" required><br><br>
+        <input type="submit" value="Publikuj">
+    </form>
+
+</script>
+
+<div id="view-container"></div>
+
+<script type="text/javascript" src="scripts/libs/handlebars.min.js"></script>
+<script type="text/javascript" src="scripts/libs/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="scripts/libs/Routy.min.js"></script>
+
+
+<script type="text/javascript" src="scripts/namespaces.js"></script>
+<script type="text/javascript" src="scripts/views/add-post-form-view.js"></script>
+
+<script type="text/javascript" src="scripts/router.js"></script>
+<script type="text/javascript" src="scripts/application.js"></script>
+
+</body>
+</html>
